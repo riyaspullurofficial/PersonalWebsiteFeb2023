@@ -302,3 +302,15 @@ function initSmoothScroll() {
 function prefersReducedMotion() {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
+
+
+// XXXXX
+window.addEventListener('scroll', () => {
+    const indicator = document.querySelector('.scroll-indicator');
+    if (window.scrollY > 50) {
+        indicator.style.opacity = '0';
+        indicator.style.pointerEvents = 'none';
+    } else {
+        indicator.style.opacity = '1';
+    }
+});

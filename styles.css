@@ -3,13 +3,13 @@
    ================================================ */
 :root {
     /* Colors */
-    --bg-primary: #0a0f1a;
-    --bg-secondary: #111827;
-    --bg-card: #1a2332;
-    --bg-card-hover: #1f2a3d;
-    --accent-primary: #3b82f6;
-    --accent-primary-hover: #2563eb;
-    --accent-secondary: #22d3ee;
+    --bg-primary: #000000;
+    --bg-secondary: #040914;
+    --bg-card: #0e121a;
+    --bg-card-hover: #11161f;
+    --accent-primary: #a06b90;
+    --accent-primary-hover: #a86363;
+    --accent-secondary: #976373;
     --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #22d3ee 100%);
     --text-primary: #ffffff;
     --text-secondary: #9ca3af;
@@ -116,6 +116,11 @@ button {
 
 .highlight {
     color: var(--accent-secondary);
+    font-weight: 600;
+}
+
+.highlight-white {
+    color: var(--text-primary);
     font-weight: 600;
 }
 
@@ -347,7 +352,7 @@ button {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--accent-primary);
+    color: var(--text-primary);
 }
 
 /* ================================================
@@ -404,7 +409,7 @@ button {
 
 .hero-greeting {
     font-size: var(--font-size-lg);
-    color: var(--accent-secondary);
+    color: var(--text-primary);
     font-weight: 500;
     margin-bottom: var(--space-xs);
 }
@@ -518,7 +523,7 @@ button {
 }
 
 .about-lead strong {
-    color: var(--accent-secondary);
+    color: var(--text-primary);
 }
 
 .about-points {
@@ -786,7 +791,7 @@ button {
 }
 
 .timeline-achievements strong {
-    color: var(--accent-secondary);
+    color: var(--text-primary);
 }
 
 /* ================================================
@@ -852,7 +857,7 @@ button {
     font-size: var(--font-size-xs);
     padding: 0.25rem 0.75rem;
     background: rgba(59, 130, 246, 0.15);
-    color: var(--accent-primary);
+    color: var(--text-secondary  );
     border-radius: var(--radius-full);
 }
 
@@ -1150,5 +1155,216 @@ button {
     
     html {
         scroll-behavior: auto;
+    }
+}
+
+/* ================================================
+   Latest changes manually added below
+   ================================================ */
+/* Container styling */
+.certs-wrapper {
+    width: 100%;
+    overflow: hidden; /* Hides the cards outside the view */
+    padding: 40px 0;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); /* Fades edges */
+}
+
+/* The horizontal track */
+.certs-slider {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: autoScroll 25s linear infinite;
+    cursor: grab;
+}
+
+/* Manual scroll support + hiding scrollbar */
+.certs-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+.certs-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Card Styling - High End Design */
+.cert-card {
+    flex: 0 0 350px; /* Prevents cards from shrinking */
+    background: rgba(255, 255, 255, 0.05); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #007bff; /* Add a brand color highlight */
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.cert-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.cert-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Animation Logic */
+@keyframes autoScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Scrolls halfway because cards are duplicated */
+}
+
+/* Stop animation on user interaction */
+.certs-wrapper:hover .certs-slider,
+.certs-wrapper:active .certs-slider {
+    animation-play-state: paused;
+}
+
+/* ================================================ 
+   ================================================ */
+/* Duplicate cards for seamless scrolling */
+/* 1. Fade Mask Wrapper */
+.contact-scroll-mask {
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 2. Scroll Container */
+.contact-scroll-container {
+    overflow-x: auto;
+    padding: 30px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    cursor: grab;
+}
+
+.contact-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* 3. The Track */
+.contact-buttons-track {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    padding: 0 50px; /* Space for the fade effect */
+    animation: autoScroll 25s linear infinite;
+}
+
+/* Pause on interaction */
+.contact-scroll-container:hover .contact-buttons-track,
+.contact-scroll-container:active .contact-buttons-track {
+    animation-play-state: paused;
+}
+
+/* 4. Button Styling (Pill Design) */
+.btn-pill {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-pill:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 5. Brand Colors */
+.btn-github { background: #24292e; color: #fff; }
+.btn-linkedin { background: #0077b5; color: #fff; }
+.btn-leetcode { background: #f89f1b; color: #fff; }
+.btn-medium { background: #000000; color: #fff; }
+.btn-stack { background: #f48024; color: #fff; }
+.btn-x { background: #000000; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+.btn-insta { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: #fff; }
+
+/* 6. Infinite Animation Logic */
+@keyframes autoScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-30%); } /* Adjust based on button count */
+}
+
+/* Scroll Indicator */
+/* --- FIXED SCROLL INDICATOR --- */
+/* Container: Fixed and centered */
+/* Container: Fixed and centered */
+.scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+}
+
+/* The Mouse Body */
+.mouse-icon {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #ffffff; /* Set border to white */
+    border-radius: 20px;
+    position: relative;
+    background: transparent;
+}
+
+/* The Animated Wheel */
+.wheel {
+    width: 3px;
+    height: 7px;
+    background: #ffffff; /* Set wheel to white */
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    /* Optional: Glow effect */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+    animation: scroll-dot 2s infinite;
+}
+
+/* Animation for the scroll movement */
+@keyframes scroll-dot {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 15px);
     }
 }
