@@ -1,639 +1,710 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="img/myphoto.jpg" type="image/png">
-	<title>Riyas Pullur</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+    <title>Riyas Pullur | Android Engineer & Flutter Developer</title>
+    <meta name="title" content="Riyas Pullur | Android Engineer & Flutter Developer">
+    <meta name="description"
+        content="Android Engineer & Flutter Developer specializing in Jetpack Compose, Kotlin, and Clean Architecture. Building production-ready apps and high-performance cross-platform solutions.">
+    <meta name="keywords"
+        content="Riyas Pullur, Android Engineer, Flutter Developer, Jetpack Compose, Kotlin, Mobile App Development, Clean Architecture, Cross-platform developer">
+    <meta name="author" content="Riyas Pullur">
+    <link rel="canonical" href="https://www.riyaspullur.online/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.riyaspullur.online/">
+    <meta property="og:title" content="Riyas Pullur | Mobile Engineer & Tech Lead">
+    <meta property="og:description"
+        content="Specializing in Jetpack Compose and cross-platform mobile development. Explore my projects and technical expertise.">
+    <meta property="og:image" content="https://www.riyaspullur.online/">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://x.com/riyas_pullur_">
+    <meta property="twitter:title" content="Riyas Pullur | Android & Flutter Developer">
+    <meta property="twitter:description" content="Building production-ready apps with clean architecture.">
+    <meta property="twitter:image" content="https://x.com/riyas_pullur_/photo">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Riyas Pullur",
+      "jobTitle": "Android Engineer, Flutter Developer",
+      "url": "https://yourportfolio.com",
+      "sameAs": [
+        "https://github.com/riyaspullurofficial",
+        "https://www.linkedin.com/in/riyas-pullur-923541205",
+        "https://stackoverflow.com/users/your-id",
+        "https://medium.com/@your-handle"
+      ],
+      "knowsAbout": ["Android Development", "Flutter", "Kotlin", "Jetpack Compose", "Clean Architecture", "Dart"]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Riyas Pullur</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container box_1620">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="" alt=""></a> <!--img/logo.png-->
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="">About</a></li><!--about-us.html-->
-							<li class="nav-item"><a class="nav-link" href="">Services</a></li><!--services.html-->
-							<!-- <li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================Header Menu Area =================-->
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <p class="hero-greeting animate-fade-up">Hello, I'm</p>
+            <h1 class="hero-title animate-fade-up delay-1">Riyas Pullur</h1>
+            <h2 class="hero-subtitle animate-fade-up delay-2">Android Engineer & Flutter Developer</h2>
+            <p class="hero-description animate-fade-up delay-3">
+                Building polished, production-ready mobile experiences with
+                <span class="highlight-white">Jetpack Compose</span> and
+                <span class="highlight-white">Flutter</span>.
+                Focused on clean architecture, stellar performance, and delightful UX.
+            </p>
+            <div class="hero-cta animate-fade-up delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
 
-	<!--================Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="container box_1620">
-			<div class="banner_inner d-flex align-items-center">
-				<div class="banner_content">
-					<div class="media">
-						<div class="d-flex">
-							<img class="rounded" src="img/myphoto.jpg" alt="" height="400px" width="400px">
-						</div>
-						<div class="media-body">
-							<div class="personal_text">
-								<h6>Hello Everybody, i am</h6>
-								<h3>Riyas Pullur</h3>
-								<h4>Software Engineer</h4>
-								<p> Android Kotlin Developer| Jetpack Compose | Flutter Developer </p>
-								<ul class="list basic_info">
-									<!-- <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li> -->
-									<li><a href="#"><i class="lnr lnr-phone-handset"></i> +91 9072990008</a></li>
-									<li><a href="#"><i class="lnr lnr-envelope"></i>riyaspullurofficial@gmai.com</a>
-									</li>
-									<li><a href="#"><i class="lnr lnr-home"></i> Calicut, Kerala</a></li>
-								</ul>
-								<ul class="list personal_social">
-									<li><a href="https://www.linkedin.com/in/riyas-pullur-923541205/"><i
-												class="fa fa-linkedin"></i></a></li>
-									<li><a href="https://medium.com/@riyaspullurofficial"><i
-												class="fa fa-medium"></i></a></li>
-									<li><a href="https://twitter.com/riyas_pullur123"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li><a href="https://www.instagram.com/riyas_plr/"><i
-												class="fa fa-instagram"></i></a></li>
-									<li><a href="https://wa.me/+919072990008"><i class="fa fa-whatsapp"></i></a></li>
+    </section>
 
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Home Banner Area =================-->
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Hire Me?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I turn complex requirements into <strong>intuitive mobile experiences</strong> that users love
+                        and businesses rely on.
+                    </p>
+                    <div class="about-points">
+                        <div class="about-point">
+                            <div class="about-icon">🎯</div>
+                            <div>
+                                <h3>Product-Focused Engineering</h3>
+                                <p>I don't just write code—I understand business goals and translate them into features
+                                    that drive real results.</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <div class="about-icon">📱</div>
+                            <div>
+                                <h3>Production-Ready Quality</h3>
+                                <p>Experience with apps serving millions of users. I know what it takes to build, ship,
+                                    and maintain at scale.</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <div class="about-icon">⚡</div>
+                            <div>
+                                <h3>Full Stack Mobile</h3>
+                                <p>From architecture to pixel-perfect UI, testing to deployment—I own the entire mobile
+                                    development lifecycle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!--================Welcome Area =================-->
-	<section class="welcome_area p_120">
-		<div class="container">
-			<div class="row welcome_inner">
-				<div class="col-lg-6">
-					<div class="welcome_text">
-						<h4>About Myself</h4>
-						<p>Passionate and Self-Taught Flutter Developer and Kotlin Android Developer. Quick learner who
-							has always been interested in new technology and learning new things. And holds a diploma in
-							Computer Engineering.</p>
-						<!-- <div class="row">
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
-        								<p>Total Donation</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>1465</h4>
-        								<p>Total Projects</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>3965</h4>
-        								<p>Total Volunteers</p>
-        							</div>
-        						</div>
-        					</div> -->
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="skills-carousel">
+                <div class="skills-track">
+                    <!-- Android Card -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon android-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z" />
+                                </svg>
+                            </div>
+                            <h3>Android Development</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Kotlin</span></li>
+                            <li><span class="skill-tag">Jetpack Compose</span></li>
+                            <li><span class="skill-tag">Android SDK</span></li>
+                            <li><span class="skill-tag">Material Design 3</span></li>
 
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="tools_expert">
-						<div class="skill_main">
-							<div class="skill_item">
-								<h4>Flutter <span class="counter">85</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Kotlin Android <span class="counter">80</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>HTML <span class="counter">95</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="95"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>CSS <span class="counter">80</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Bootstrap <span class="counter">75</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Figma <span class="counter">70</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Postman <span class="counter">75</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Java <span class="counter">80</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>C <span class="counter">70</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="skill_item">
-								<h4>NodeJS <span class="counter">45</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="45"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-							<div class="skill_item">
-								<h4>Springboot <span class="counter">45</span>%</h4>
-								<div class="progress_br">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="45"
-											aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Welcome Area =================-->
+                            <li><span class="skill-tag">Coroutines & Flow</span></li>
+                            <li><span class="skill-tag">LiveData & ViewModel</span></li>
 
-	<!--================My Tabs Area =================-->
-	<section class="mytabs_area p_120">
-		<div class="container">
-			<div class="tabs_inner">
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-							aria-controls="home" aria-selected="true">My Experiences</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-							aria-controls="profile" aria-selected="false">My Education</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-						<ul class="list">
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>July 2022 to present</p>
-									</div>
-									<div class="media-body">
-										<h4>Creace Technologies</h4>
-										<p>Software Engineer <br />Thiruvananthapuram, Kerala</p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>Nov-2021 to July-2022 </p>
-									</div>
-									<div class="media-body">
-										<h4>Brototype</h4>
-										<p>Android Developer Trainee <br />Kochi, Kerala</p>
-									</div>
-								</div>
-							</li>
+                            <li><span class="skill-tag">Dagger Hilt</span></li>
+                            <li><span class="skill-tag">WorkManager</span></li>
+                            <li><span class="skill-tag">Navigation Component</span></li>
 
-						</ul>
-					</div>
-					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-						<ul class="list">
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>&nbsp;Present&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										</p>
-									</div>
-									<div class="media-body">
-										<h4>BSc Computer Science</h4>
-										<p>Annamalai University Distance Education<br />Tamilnadu</p>
-									</div>
-								</div>
-							</li>
+                            <li><span class="skill-tag">Room Database</span></li>
+                            <li><span class="skill-tag">Offline-First Architecture</span></li>
+                            <li><span class="skill-tag">Retrofit & OkHttp</span></li>
+                            <li><span class="skill-tag">GraphQL</span></li>
+                            <li><span class="skill-tag">Paging 3</span></li>
 
-							<li>
-								<span></span>
-								<div class="media">
-									<div class="d-flex">
-										<p>June-2014 to March 2017</p>
-									</div>
-									<div class="media-body">
-										<h4>Diploma in Computer Engineering</h4>
-										<p>Seethi sahib memorial polytechnic college <br />Tirur,Kerala</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End My Tabs Area =================-->
+                            <li><span class="skill-tag">Unit Testing (JUnit & Espresso)</span></li>
+                            <li><span class="skill-tag">LeakCanary</span></li>
+                            <li><span class="skill-tag">SonarQube</span></li>
+                            <li><span class="skill-tag">CI/CD Pipelines</span></li>
+                        </ul>
+                    </div>
 
-	<!--================Feature Area =================-->
-	<section class="feature_area p_120">
-		<div class="container">
-			<div class="main_title">
-				<h2>Work Area</h2>
-				<p>Native android and cross App developer.</p>
-			</div>
-			<div class="feature_inner row">
-				<div class="col-lg-4 col-md-6">
-					<div class="feature_item">
-						<i><img src="https://assets.website-files.com/60d251a34163cf29e1220806/63742e4e397f173624ab462e_355-3557482_flutter-logo-png-transparent-png.png"
-								alt="Kotlin" width="130" height="130"></i>
-						<h4>Flutter</h4>
-						<p>Flutter is an open source framework developed and supported by Google. Frontend and
-							full-stack developers use Flutter to build an application's user interface (UI) for multiple
-							platforms with a single codebase. No Cross-Platform Dependency: iOS and Android apps work
-							very differently internally, so the developers had to redesign and reconfigure the same
-							content for individual platforms.
-							Time Constraints: Making a professional app, from coding to designing requires a lot of
-							time. Companies usually set a time limit in which the app should be ready to be launched
-							into the market. Those developers who had to work in both these platforms often found had
-							time limit issues, and the efficiency and quality of work degraded.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="feature_item">
-						<i>
-							<img src="data:image/jpeg;base64,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"
-								alt="Kotlin" width="100" height="100">
+                    <!-- Flutter Card -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon flutter-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z" />
+                                </svg>
+                            </div>
+                            <h3>Flutter Development</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Dart</span></li>
+                            <li><span class="skill-tag">Flutter SDK</span></li>
+                            <li><span class="skill-tag">Custom Widgets & UI Components</span></li>
 
-						</i>
-						<h4>Kotlin</h4>
-						<p>Kotlin is a modern statically typed programming language used by over 60% of professional
-							Android developers that helps boost productivity, developer satisfaction, and code safety.
-							Reduced development time as Kotlin uses less lines of code than alternatives like Java,
-							developers can read and edit code a lot faster and more efficiently. This means a major
-							reduction in overall development time.
-							Fewer app crashes not only does fewer lines of code mean higher productivity, it means
-							locating and ironing out bugs is far simpler. Using a code that's more concise takes the
-							hassle out of long term maintenance. It was first introduced by JetBrains in 2011 and is a
-							new language for the JVM. Kotlin is an object-oriented language, and a “better language”
-							than Java, but still be fully interoperable with Java code.
-						</p>
-					</div>
-				</div>
+                            <li><span class="skill-tag">GetX (State Management, Routing, DI)</span></li>
+                            <li><span class="skill-tag">MVVM / MVC Architecture</span></li>
+                            <li><span class="skill-tag">Reactive Programming</span></li>
 
-			</div>
-		</div>
-	</section>
-	<!--================End Feature Area =================-->
+                            <li><span class="skill-tag">RESTful APIs (Dio & HTTP)</span></li>
+                            <li><span class="skill-tag">Sqflite (Local Persistence)</span></li>
+                            <li><span class="skill-tag">GetStorage (Lightweight Caching)</span></li>
+                            <li><span class="skill-tag">Offline-First Design</span></li>
 
-	<!--================Home Gallery Area =================-->
-	<section class="home_gallery_area p_120">
-		<div class="container">
-			<div class="main_title">
-				<h2>Our Latest Featured Projects</h2>
-				<p>Who are in extremely love with eco friendly system.</p>
-			</div>
-			<div class="isotope_fillter">
-				<ul class="gallery_filter list">
-					<li class="active" data-filter="*"><a href="#">All</a></li>
-					<li data-filter=".brand"><a href="#">Vector</a></li>
-					<li data-filter=".manipul"><a href="#">Raster</a></li>
-					<li data-filter=".creative"><a href="#">UI/UX</a></li>
-					<li data-filter=".design"><a href="#">Printing</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="container">
-			<div class="gallery_f_inner row imageGallery1">
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/others/q8kaamil.jpeg" alt="">
-							<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>Q8 Kaamil</h4>
-							<p>Office Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/others/meatapp.jpeg" alt="">
-							<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>Meat App</h4>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-							<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>Creative Poster Design</h4>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-							<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>Embosed Logo Design</h4>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-							<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>3D Disposable Bottle</h4>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-					<div class="h_gallery_item">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-							<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png"
-									alt=""></a>
-						</div>
-						<div class="g_item_text">
-							<h4>3D Logo Design</h4>
-							<p>Client Project</p>
-						</div>
-					</div>
-				</div> -->
-			</div>
-			<div class="more_btn">
-				<a class="main_btn" href="#">Load More Items</a>
-			</div>
-		</div>
-	</section>
-	<!--================End Home Gallery Area =================-->
+                            <li><span class="skill-tag">Firebase Integration</span></li>
+                            <li><span class="skill-tag">Google Maps SDK</span></li>
+                            <li><span class="skill-tag">Localization (i18n)</span></li>
+                            <li><span class="skill-tag">Payment Integration</span></li>
 
-	<!--================Testimonials Area =================-->
-	<!-- <section class="testimonials_area p_120">
-		<div class="container">
-			<div class="main_title">
-				<h2>Testimonials</h2>
-				<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in
-					price. You may see some for as low as $.17 each.</p>
-			</div>
-			<div class="testi_inner">
-				<div class="testi_slider owl-carousel">
-					<div class="item">
-						<div class="testi_item">
-							<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth.
-								If you think about it, you travel across her face</p>
-							<h4>Fanny Spencer</h4>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star-half-o"></i></a>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testi_item">
-							<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth.
-								If you think about it, you travel across her face</p>
-							<h4>Fanny Spencer</h4>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star-half-o"></i></a>
-						</div>
-					</div>
-					<div class="item">
-						<div class="testi_item">
-							<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth.
-								If you think about it, you travel across her face</p>
-							<h4>Fanny Spencer</h4>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star"></i></a>
-							<a href="#"><i class="fa fa-star-half-o"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================End Testimonials Area =================-->
+                            <li><span class="skill-tag">Lottie Animations</span></li>
+                            <li><span class="skill-tag">Sensors API</span></li>
+                        </ul>
+                    </div>
 
-	<!--================Footer Area =================-->
-	<footer class="footer_area p_120">
-		<div class="container">
-			<div class="row footer_inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget ab_widget">
-						<div class="f_title">
-							<h3>About Me</h3>
-						</div>
-						<p>Passionate and Self-Taught Native Android Developer in Kotlin and Android/ IOS Developer with
-							Skills in Flutter SDK. Flutter is the Future for cross platform app development. Quick
-							learner who has always been interested in new technology, learning new things and problem
-							Solver.I am eager to write application with best code Practices, Architecture, tools &
-							technologies. Holds a diploma in Computer Engineering.</p>
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-							template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-								href="" target="_blank">Riyas pullur</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</aside>
-				</div>
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget news_widget">
-						<div class="f_title">
-							<h3>Newsletter</h3>
-						</div>
-						<p>Stay updated with our latest trends</p>
-						<div id="mc_embed_signup">
-							<form target="_blank"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="subscribe_form relative">
-								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Enter email address"
-										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
-										required="" type="email">
-									<button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
-								</div>
-								<div class="mt-10 info"></div>
-							</form>
-						</div>
-					</aside>
-				</div>
-				<div class="col-lg-2">
-					<aside class="f_widget social_widget">
-						<div class="f_title">
-							<h3>Follow Me</h3>
-						</div>
-						<p>Let us be social</p>
-						<!-- <ul class="list">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance"></i></a></li>
-						</ul> -->
-					</aside>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
+                    <!-- Engineering Card -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon eng-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <h3>Engineering Practices</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-tag">Clean Architecture</span></li>
+                            <li><span class="skill-tag">Unit Testing</span></li>
+                            <li><span class="skill-tag">UI Testing</span></li>
+                            <li><span class="skill-tag">Performance Optimization</span></li>
+                            <li><span class="skill-tag">Git & Code Review</span></li>
+                            <li><span class="skill-tag">Agile / Scrum</span></li>
+                            <li><span class="skill-tag">Design Systems</span></li>
+                            <li><span class="skill-tag">Accessibility</span></li>
+                            <li><span class="skill-tag">MVVM / Clean Architecture / MVC</span></li>
+                            <li><span class="skill-tag">Multi-Module Architecture</span></li>
+                            <li><span class="skill-tag">Reverse Engineering - JADX, APKTool</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-index="0" aria-label="Go to slide 1"></button>
+                    <button class="indicator" data-index="1" aria-label="Go to slide 2"></button>
+                    <button class="indicator" data-index="2" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Android Engineer</h3>
+                            <span class="timeline-date">AUG 2022 - JAN 2025</span>
+                        </div>
+                        <p class="timeline-company">YouGotaGift</p>
+                        <ul class="timeline-achievements">
+                            <li>Migrated large, production-scale XML-based UI codebases to <strong>Jetpack
+                                    Compose</strong>, significantly improving maintainability and development velocity
+                            </li>
+                            <li>Led UI development using Jetpack Compose, building complex <strong>reusable
+                                    composables</strong> and optimizing recomposition and state management</li>
+                            <li>Implemented complex navigation flows using <strong>Jetpack Navigation</strong>,
+                                including deep links and multi-graph setups</li>
+                            <li>Championed <strong>MVVM and Clean Architecture</strong>, ensuring scalable and testable
+                                codebases across features</li>
+                            <li>Designed and implemented UI and unit tests using <strong>Compose Testing APIs, Espresso,
+                                    and JUnit</strong></li>
+                            <li>Integrated backend services using <strong>GraphQL and RESTful APIs (Retrofit)</strong>
+                                for real-time data synchronization</li>
+                            <li>Improved app stability by resolving memory leaks via <strong>LeakCanary</strong> and
+                                enforcing code quality via <strong>SonarQube</strong></li>
+                            <li>Built rich media experiences using <strong>ExoPlayer</strong> for video streaming and
+                                <strong>Lottie</strong> for animations
+                            </li>
+                            <li>Implemented <strong>offline-first workflows</strong> using Room DB and custom caching
+                                strategies</li>
+                            <li>Utilized <strong>WorkManager</strong> for reliable background processing and scheduled
+                                tasks</li>
+                            <li>Integrated third-party services including <strong>Firebase, CleverTap, AWS Amplify,
+                                    Sentry, and Zendesk</strong></li>
+                            <li>Collaborated with designers via <strong>Figma</strong> to ensure pixel-perfect design
+                                implementation</li>
+                            <li>Contributed to <strong>CI/CD pipelines</strong> and delivered features in
+                                <strong>Agile/Scrum</strong> environments
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Flutter Developer</h3>
+                            <span class="timeline-date">JUL 2021 - JUL 2022</span>
+                        </div>
+                        <p class="timeline-company">Creace Technologies</p>
+                        <ul class="timeline-achievements">
+                            <li>Developed and maintained cross-platform mobile applications using <strong>Flutter and
+                                    Dart</strong></li>
+                            <li>Implemented <strong>MVVM / MVC</strong> architectural patterns for clean separation of
+                                concerns</li>
+                            <li>Used <strong>GetX</strong> for state management, navigation, dependency injection, and
+                                reactive UI updates</li>
+                            <li>Managed global and feature-level state efficiently to ensure smooth performance</li>
+                            <li>Implemented real-time UI updates using <strong>reactive programming</strong></li>
+                            <li>Added <strong>multi-language (i18n)</strong> support with runtime language switching
+                                using GetX localization</li>
+                            <li>Integrated <strong>RESTful APIs</strong> using Dio and HTTP with proper error handling
+                                and interceptors</li>
+                            <li>Implemented secure network communication and optimized API performance</li>
+                            <li>Built location-aware features using <strong>Google Maps SDK</strong></li>
+                            <li>Implemented <strong>offline-first functionality</strong> using Sqflite for local data
+                                persistence</li>
+                            <li>Used GetStorage for lightweight caching and user session management</li>
+                            <li>Followed <strong>Clean Architecture</strong> principles to improve scalability and
+                                testability</li>
+                            <li>Applied <strong>SOLID</strong> principles to reduce coupling and improve code
+                                maintainability</li>
+                            <li>Created reusable and modular UI components in Flutter</li>
+                            <li>Ensured <strong>pixel-perfect UI</strong> implementation in collaboration with UI/UX
+                                designers</li>
+                            <li>Optimized UI performance to maintain smooth animations and responsiveness</li>
+                            <li>Handled app navigation flows including deep navigation and conditional routing</li>
+                            <li>Implemented form validation and input handling with reactive state</li>
+                            <li>Improved app stability and reliability through structured state and data handling</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Android Development - Internship</h3>
+                            <span class="timeline-date">SEP 2021 - SEP 2022</span>
+                        </div>
+                        <p class="timeline-company">Brototype, Kochi</p>
+                        <ul class="timeline-achievements">
+                            <li>Developed native Android applications using <strong>Kotlin/Java</strong> and
+                                <strong>XML</strong> layouts with a focus on responsive UI design
+                            </li>
+                            <li>Implemented <strong>MVVM Architecture</strong> using ViewModel and LiveData to ensure
+                                clean separation of logic and UI</li>
+                            <li>Integrated <strong>RESTful APIs</strong> using <strong>Retrofit</strong> and OkHttp for
+                                seamless data communication with backend services</li>
+                            <li>Utilized <strong>ViewBinding</strong> and <strong>DataBinding</strong> to reduce
+                                boilerplate code and improve layout efficiency</li>
+                            <li>Managed local data persistence and offline capabilities using <strong>Room
+                                    Database</strong> and SharedPreferences</li>
+                            <li>Handled complex asynchronous tasks and background processing using
+                                <strong>Coroutines</strong> and WorkManager
+                            </li>
+                            <li>Mastered the <strong>Activity and Fragment lifecycle</strong> to ensure app stability
+                                and efficient resource management</li>
+                            <li>Implemented <strong>Navigation Component</strong> for robust fragment-based navigation
+                                and deep linking</li>
+                            <li>Worked with <strong>RecyclerView</strong> and custom adapters to display dynamic lists
+                                with optimized performance</li>
+                            <li>Integrated <strong>Firebase</strong> services including Authentication, Cloud Firestore,
+                                and Push Notifications</li>
+                            <li>Collaborated on version control using <strong>Git/GitHub</strong>, following standard
+                                branching and pull request workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+               
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🎁</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>YouGotaGift</h3>
+                        <p>A premier digital gift card platform in the Middle East. Re-engineered the mobile experience
+                            using a fully declarative UI, powering loyalty programs for major banks and airlines with
+                            seamless, real-time rewards.</p>
+
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>GraphQL</span>
+                            <span>Clean Architecture</span>
+                            <span>Hilt</span>
+                        </div>
+
+                        <div class="project-links" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 15px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.yougotagift.YouGotaGiftApp&pcampaignid=web_share"
+                                class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M17.9 5c-1.1 0-2.3.4-3.2 1.1L12 8.3 9.3 6.1C8.4 5.4 7.2 5 6.1 5 3.3 5 1 7.3 1 10.1c0 1.3.5 2.5 1.3 3.4l9.2 9.2c.2.2.5.3.8.3s.6-.1.8-.3l9.2-9.2c.8-.9 1.3-2.1 1.3-3.4C23 7.3 20.7 5 17.9 5z" />
+                                </svg>
+                                <span>Play Store</span>
+                            </a>
+
+                            <a href="https://apps.apple.com/ae/app/yougotagift/id1003784085" class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                                </svg>
+                                <span>App Store</span>
+                            </a>
+                            <a href="https://yougotagift.com" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>📍</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>8Kaamil</h3>
+                        <p>A comprehensive digital guide for Kuwait, enabling users to find and compare local services
+                            while providing businesses a platform to reach active customers through organized
+                            categories.</p>
+
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>GetX</span>
+                            <span>Google Maps SDK</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <div class="project-links" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 15px;">
+                            <a href="https://q8kaamil.updatestar.com/" class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M17.9 5c-1.1 0-2.3.4-3.2 1.1L12 8.3 9.3 6.1C8.4 5.4 7.2 5 6.1 5 3.3 5 1 7.3 1 10.1c0 1.3.5 2.5 1.3 3.4l9.2 9.2c.2.2.5.3.8.3s.6-.1.8-.3l9.2-9.2c.8-.9 1.3-2.1 1.3-3.4C23 7.3 20.7 5 17.9 5z" />
+                                </svg>
+                                <span>Play Store</span>
+                            </a>
+
+                            <a href="https://apps.apple.com/us/app/q8kaamil/id1545572594" class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                                </svg>
+                                <span>App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
 
 
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>📚</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DC Books</h3>
+                        <p>A premier digital platform for Malayalam literature, offering thousands of e-books with
+                            features like smart bookmarking, progress tracking, and a seamless offline reading
+                            experience.</p>
+
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>SQLite (Sqflite)</span>
+                            <span>PDF/EPUB Viewer</span>
+                            <span>Path Provider</span>
+                        </div>
+
+                        <div class="project-links" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 15px;">
+                            <a href="https://dcbooks.com" target="_blank" class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                                <span>Website</span>
+                            </a>
+
+                            <a href="https://play.google.com/store/apps/details?id=com.dcbooks.digital&pcampaignid=web_share"
+                                class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M17.9 5c-1.1 0-2.3.4-3.2 1.1L12 8.3 9.3 6.1C8.4 5.4 7.2 5 6.1 5 3.3 5 1 7.3 1 10.1c0 1.3.5 2.5 1.3 3.4l9.2 9.2c.2.2.5.3.8.3s.6-.1.8-.3l9.2-9.2c.8-.9 1.3-2.1 1.3-3.4C23 7.3 20.7 5 17.9 5z" />
+                                </svg>
+                                <span>Play Store</span>
+                            </a>
+
+                            <a href="https://apps.apple.com/in/app/dc-books/id920776800" class="project-link"
+                                style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 500; color: inherit;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                    <path
+                                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                                </svg>
+                                <span>App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/theme.js"></script>
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>📊</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Feedback System (Kiosk & CMS)</h3>
+                        <p>An end-to-end feedback ecosystem featuring a tablet-based Kiosk for emoji-driven customer
+                            sentiment analysis and a robust Web CMS for administrators to manage questions, outlets, and
+                            real-time analytics.</p>
+
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase (Firestore)</span>
+                            <span>Cloud Functions</span>
+                            <span>Data Visualization</span>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <div class="certs-slider">
+        <a href="" class="cert-card-link">
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-info">
+                    <h3>Diploma in Computer Engineering</h3>
+                    <p>SSM Polytechnic College Tirur • 2014-17</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="" class="cert-card-link">
+            <div class="cert-card">
+                <div class="cert-icon">📜</div>
+                <div class="cert-info">
+                    <h3>Associate Android Developer</h3>
+                    <p>Google Certification</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="contact-subtitle">
+                Mobile engineer available for new projects. Let's connect!
+            </p>
+
+            <div class="contact-scroll-mask">
+                <div class="contact-scroll-container">
+                    <div class="contact-buttons-track">
+                        <a href="mailto:riyaspullurofficial@gmail.com" class="btn btn-primary btn-pill">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                                height="20">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Email Me
+                        </a>
+
+                        <a href="https://github.com/riyaspullurofficial" target="_blank" rel="noopener"
+                            class="btn btn-github btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.12.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23.65 1.66.25 2.88.12 3.18a4.65 4.65 0 011.23 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.82.58A12.01 12.01 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/riyas-pullur-923541205" target="_blank" rel="noopener"
+                            class="btn btn-linkedin btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.763z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+
+                        <a href="https://leetcode.com/u/RiyasPullur/" target="_blank" rel="noopener"
+                            class="btn btn-leetcode btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.414l-4.377 4.406a.607.607 0 0 0 0 .856.602.602 0 0 0 .854 0l4.383-4.408a.146.146 0 0 1 .212 0l10.281 10.307a.146.146 0 0 1 0 .212l-10.281 10.307a.146.146 0 0 1-.212 0l-4.383-4.408a.602.602 0 0 0-.854 0 .607.607 0 0 0 0 .856l4.377 4.406a1.374 1.374 0 0 0 1.922 0l10.281-10.307a1.374 1.374 0 0 0 0-1.922L14.444.414A1.374 1.374 0 0 0 13.483 0z" />
+                            </svg>
+                            LeetCode
+                        </a>
+
+                        <a href="https://medium.com/@riyaspullurofficial" target="_blank" rel="noopener"
+                            class="btn btn-medium btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M13.54 12a6.8 6.8 0 11-6.77-6.82A6.77 6.77 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42s-3.38-2.88-3.38-6.42 1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zm3.04 0c0 3.17-.31 5.75-.7 5.75s-.7-2.58-.7-5.75.31-5.75.7-5.75.7 2.58.7 5.75z" />
+                            </svg>
+                            Medium
+                        </a>
+
+                        <a href="https://stackoverflow.com/users/15084887/riyas-pullur" target="_blank" rel="noopener"
+                            class="btn btn-stack btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.432-2.093-10.473-2.193-.439 2.097zm1.354-4.591l9.45 4.569.951-1.967-9.451-4.566-.95 1.964z" />
+                            </svg>
+                            Stack Overflow
+                        </a>
+
+                        <a href="https://x.com/riyas_pullur_" target="_blank" rel="noopener" class="btn btn-x btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z" />
+                            </svg>
+                            (Twitter)
+                        </a>
+
+                        <a href="https://www.instagram.com/riyas_pullur/" target="_blank" rel="noopener"
+                            class="btn btn-insta btn-pill">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.618 6.77 6.98 6.97 1.28.058 1.688.072 4.948.072s3.667-.014 4.947-.072c4.351-.2 6.77-2.618 6.97-6.98.058-1.28.072-1.688.072-4.948s-.014-3.667-.072-4.947c-.2-4.353-2.618-6.77-6.98-6.97C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Riyas Pullur. Built with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#contact" class="btn btn-primary btn-sticky">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            Hire Me
+        </a>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
